@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/Nike,_Inc.-White-Logo.wine.png" alt="logo"/>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-category="shoes">Shoes</a></li>
+                <li><a href="#" data-category="clothing">Clothing</a></li>
+                <li><a href="#" data-category="accessories">Accessories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="login-btn">Sign In</button>
+                <button class="cart-btn">
+                    <span class="cart-icon"><i class="fa-solid fa-cart-arrow-down"></i>🛒</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="running-slider">
+            <div class="slider-track">
+              <span>NEW DROP OUT NOW</span>
+              <span>GEAR UP FOR GREATNESS</span>
+              <span>FREE SHIPPING ON ORDERS ABOVE $100</span>
+              <span>10% Discount for our Members</span>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nike</h1>
+            <p class="hero-subtitle">"Greatness isn’t given. It’s earned—one step, one rep, one drop of sweat at a time."</p>
+            <button class="hero-cta">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="/images/KV - Nike - Rodolfo Augusto.jpg" alt="Nike Hero" />
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="shoes">
+                    <img src="/images/ -4.jpg" alt="Shoes" />
+                    <h3>Shoes</h3>
+                    <p>Latest footwear collection</p>
+                </div>
+                <div class="category-card" data-category="clothing">
+                    <img src="images/clothing.png" alt="Clothing" />
+                    <h3>Clothing</h3>
+                    <p>Athletic wear & lifestyle</p>
+                </div>
+                <div class="category-card" data-category="accessories">
+                    <img src="/images/sports.jpg" alt="Accessories" />
+                    <h3>Sports</h3>
+                    <p>Complete your look</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="shoes">Shoes</button>
+                    <button class="filter-tab" data-filter="clothing">Clothing</button>
+                    <button class="filter-tab" data-filter="accessories">Accessories</button>
+                </div>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Sign In to Nike</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form class="login-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Email address" required />
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="login-submit">Sign In</button>
+                <p class="login-footer">
+                    Don't have an account? <a href="#">Join us</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Find a Store</h4>
+                    <ul>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Nike NYC</a></li>
+                        <li><a href="#">Nike Chicago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About Nike</h4>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; cloned with ❤️ ~Tirth Dhandhukia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
